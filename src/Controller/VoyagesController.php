@@ -4,6 +4,7 @@
 namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 use Twig\Environment;
 
 /**
@@ -13,9 +14,10 @@ use Twig\Environment;
  */
 class VoyagesController extends AbstractController {
     /**
-     * @route("/",name="accueil")
+     * @route("/voyages",name="voyages")
      * @return Response
      */
     public function index():Response{
-        return $this->render("pages/acceuil.html.twig");
+        return $this->render("pages/voyages.html.twig");
+}
 }

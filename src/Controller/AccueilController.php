@@ -5,6 +5,7 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 use Twig\Environment;
 
 /**
@@ -15,23 +16,8 @@ use Twig\Environment;
 
 
 class AccueilController extends AbstractController {
-    
-    /**
-     * 
-     * @var Environment
-     */
-    
-  //  private $twig;
-    /**
-     * 
-     * @param Environment $twig
-     */
- //   public function __construct(Environment $twig) {
- //       $this->twig = $twig;
- //   }
-
-    /**
-     * @route("/",name="accueil")
+     /**
+     * @route("/",name="acceuil")
      * @return Response
      */
     public function index():Response{
